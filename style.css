@@ -1,0 +1,57 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: #005db1;
+}
+
+.coralContainer {
+  display: flex;
+  height: 220px;
+  align-items: flex-start;
+}
+
+img.coral.upperCoral {
+  z-index: 50;
+}
+
+img.coral.bottomCoral {
+  align-self: flex-end;
+  z-index: 150;
+}
+
+#blooper {
+  animation: swim 15.9s linear infinite;
+  transform: translateX(-120%);
+  position: fixed;
+  animation-delay: 1s;
+  z-index: 100;
+}
+
+@keyframes swim {
+  0% {
+    transform: translateX(-120%) scaleX(-1);
+  }
+
+  31.4% {
+    transform: translateX(100vw) translateY(50vh) scaleX(-1) scale(0.2);
+  }
+
+  32.3% {
+    transform: translateX(100vw) scale(0.2);
+  }
+
+  63.7% {
+    transform: translateX(-120%) translateY(110vh);
+  }
+
+  65.6% {
+    transform: translateX(90vw) translateY(100vh) rotateZ(50deg);
+  }
+
+  97% {
+    transform: translateX(-90%) translateY(-120%) scale(0.2) rotateZ(50deg);
+  }
+}
