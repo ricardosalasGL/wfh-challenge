@@ -2,7 +2,6 @@ import { imageService } from "./imageService";
 import "./style.css";
 
 const blooperSwiming = (function() {
-  const service = imageService();
   const coralContainerHeight = 220;
   const coralWidth = 154;
 
@@ -36,7 +35,7 @@ const blooperSwiming = (function() {
   };
 
   const loadImages = () => {
-    service.getSvgUrl().then(imageList => {
+    imageService.getSvgUrl().then(imageList => {
       document.getElementById("blooper").src = imageList["images"]["4:2"];
       const coralElements = document.getElementsByClassName("coral");
       for (var element of coralElements) {
