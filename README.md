@@ -32,4 +32,4 @@ Most variables are defined as const, as their value didn't need to change. let u
 
 #### Closures
 
-The service which retrieves the SVGs is defined inside a closure, only giving access to the function to retrive the images.
+The service which retrieves the SVGs is defined inside a closure, only giving access to the function to retrieve the images.
