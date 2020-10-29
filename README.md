@@ -28,8 +28,8 @@ Flexbox was used for accommodate the corals across the screen, it was specially 
 
 #### Var, Let, Const
 
-Most variables are defined as const, as their value didn't need to change. Let used in the `for` loops.
+Most variables are defined as const, as their value didn't need to change. let used in the `for` loops.
 
 #### Closures
 
-The service which retrieves the SVGs is defined inside a closure, only giving access to the function to load the images.
+The service which retrieves the SVGs is defined inside a closure, only giving access to the function to retrive the images.
